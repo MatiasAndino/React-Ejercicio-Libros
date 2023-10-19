@@ -1,26 +1,26 @@
 import { useState } from "react";
-import { ListaLibros } from "./components/ListaLibros";
+// import { ListaLibros } from "./components/ListaLibros";
+// import { ListaLectura } from "./components/ListaLectura";
 import { SelectedFilter } from "./components/SelectedFilter";
+import { Pagina } from "./components/Pagina";
+
 
 function LibrosApp() {
   
-  const [ genero, setGenero ] = useState('Todos')
+  // const [ genero, setGenero ] = useState('Todos')
   
   return (
     <>
-      <SelectedFilter setGenero={ setGenero } />
+      {/* <SelectedFilter setGenero={ setGenero } />
       <div className="container">
-        <div className="row">
+        <div className="row"> */}
           
-          <div className="col-8">
-            <ListaLibros genero={ genero } />
-          </div>
+          <Pagina />
+          {/* <ListaLibros genero={ genero } />
 
-          <div className="col border border-primary rounded">
-            
-          </div>
-        </div>
-      </div>
+          <ListaLectura /> */}
+        {/* </div> */}
+      {/* </div> */}
     </>
   )
 }
